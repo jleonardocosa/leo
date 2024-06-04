@@ -1,0 +1,12 @@
+file_format: "1"
+id: leo
+name: Leo
+type: shield
+url: https://github.com/jleonardocosa/Leo
+requires: [pro_micro]
+features:
+  - keys
+siblings:
+  - leo_left
+  - leo_right
+  - leo_dongle

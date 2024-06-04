@@ -1,0 +1,26 @@
+# Copyright (c) 2021 The ZMK Contributors
+# SPDX-License-Identifier: MIT
+
+
+if SHIELD_LEO_DONGLE
+
+config ZMK_KEYBOARD_NAME
+    default "LEO"
+
+config ZMK_SPLIT_BLE_ROLE_CENTRAL
+    default y
+
+config ZMK_USB
+    default y
+
+endif
+
+if SHIELD_LEO_LEFT || SHIELD_LEO_RIGHT || SHIELD_LEO_DONGLE
+
+config ZMK_SPLIT
+    default y
+
+config ZMK_BLE
+    default y
+
+endif
