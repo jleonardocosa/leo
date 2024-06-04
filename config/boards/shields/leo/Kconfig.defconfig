@@ -5,7 +5,7 @@
 if SHIELD_LEO_DONGLE
 
 config ZMK_KEYBOARD_NAME
-    default "LEO"
+    default "Redox"
 
 config ZMK_SPLIT_BLE_ROLE_CENTRAL
     default y
