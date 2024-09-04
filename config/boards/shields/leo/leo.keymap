@@ -39,11 +39,11 @@
 // | SHIFT | ESC | GUI | COPY  | PASTE |     | PG_UP | PG_DOWN | --- | HOME | END |  \  |  1  |   2  |  3   | RET |  RET  |
 // | CRTL  | ALT | GUI | LOWER |     GUI     | LOWER | SPACE   | --- | DEL  |  0  |    RAISE  | LEFT | DOWN | UP  | RIGHT |
             bindings = <
-  &kp F1      &kp F2        &kp F3         &kp F4        &kp F5         &kp F6                                                  &kp F7   &kp F8      &kp F9      &kp F10      &kp F11          &kp F12
-  &kp F7      &kp F8        &kp F9         &kp F10       &kp F11        &kp F12        &trans                           &trans  &trans   &kp KP_N7   &kp KP_N8   &kp KP_N9    &kp KP_DIVIDE    &kp LS(N0)
-  &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1   &bt BT_SEL 2  &bt BT_SEL 3   &bt BT_SEL 4   &trans                           &trans  &trans   &kp KP_N4   &kp KP_N5   &kp KP_N6    &kp KP_MULTIPLY  &trans
-  &trans      &trans        &trans         &trans        &trans         &trans         &trans      &trans       &trans  &trans  &trans   &kp KP_N1   &kp KP_N2   &kp KP_N3    &kp KP_MINUS     &trans 
-  &trans      &trans        &trans         &trans        &trans                        &trans      &trans       &trans  &trans           &kp KP_N0   &kp KP_DOT  &kp RET      &kp KP_PLUS      &kp KP_NUM
+  &kp F1  &kp F2  &kp F3   &kp F4   &kp F5  &kp F6                                    &kp F7   &kp F8     &kp F9      &kp F10     &kp F11          &kp F12
+  &trans  &trans  &trans   &trans   &trans  &trans   &trans                   &trans  &trans   &kp KP_N7  &kp KP_N8   &kp KP_N9   &kp KP_DIVIDE    &kp LS(N0)
+  &trans  &trans  &trans   &trans   &trans  &trans   &trans                   &trans  &trans   &kp KP_N4  &kp KP_N5   &kp KP_N6   &kp KP_MULTIPLY  &trans
+  &trans  &trans  &trans   &trans   &trans  &trans   &trans  &trans   &trans  &trans  &trans   &kp KP_N1  &kp KP_N2   &kp KP_N3   &kp KP_MINUS     &trans 
+  &trans  &trans  &trans   &trans   &trans           &trans   &trans  &trans  &trans           &kp KP_N0  &kp KP_DOT  &kp RET     &kp KP_PLUS      &kp KP_NUM
             >;
         };
 
@@ -55,11 +55,11 @@
 // | SHIFT | ESC | GUI |   (   |  )  |     | PG_UP | PG_DOWN | --- | HOME | END   | END  | PGDN | LEFT | DOWN | RIGHT |  RET  |
 // | CRTL  | ALT | GUI | LOWER |    GUI    | LOWER | SPACE   | --- | DEL  | SPACE |    RAISE    | LEFT | DOWN | UP    | RIGHT |
             bindings = <
-   &kp F1   &kp F2     &kp F3    &kp F4    &kp F5    &kp F6                                    &kp F7     &kp F8     &kp F9     &kp F10   &kp F11   &kp F12
-   &kp ESC  &kp EXCL   &kp AT    &kp HASH  &kp DLLR  &kp PRCNT &trans                  &trans  &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &kp DEL
-   &trans   &kp UNDER  &kp PLUS  &kp LBRC  &kp RBRC  &kp PIPE  &trans                  &trans  &kp HOME   &kp PG_UP  &kp PSCRN  &kp UP    &kp GRAVE &kp TILDE
-   &trans   &kp ESC    &kp LGUI  &kp LPAR  &kp RPAR  &kp TILDE &trans &trans    &trans &trans  &kp END    &kp PG_DN  &kp LEFT   &kp DOWN  &kp RIGHT &kp RET
-   &trans   &trans     &trans    &mo 3     &trans              &mo 3  &trans    &trans &trans             &trans     &trans     &trans    &trans    &trans
+   &kp F1   &kp F2         &kp F3        &kp F4        &kp F5         &kp F6                                        &kp F7  &kp F8   &kp F9  &kp F10 &kp F11 &kp F12
+   &kp ESC  &kp LS(EQUAL)  &kp LS(N1)   &kp EQUAL      &kp LS(MINUS)  &kp GRAVE     &trans                  &trans  &trans  &trans   &trans  &trans  &trans  &trans
+   &trans   &kp RA(Q)      &kp LS(N7)   &kp RA(MINUS)  &kp MINUS      &kp RA(RBKT)  &trans                  &trans  &trans  &trans   &trans  &trans  &trans  &trans
+   &trans   &kp LS(N3)     &kp LS(N4)   &kp LS(GRAVE)  &kp LS(N2)     &kp LS(LBKT)  &trans &trans    &trans &trans  &trans  &trans   &trans  &trans  &trans  &trans
+   &trans   &kp RA(GRAVE)  &kp LS(N5)   &kp LS(N6)     &trans                       &mo 3  &trans    &trans &trans          &trans   &trans  &trans  &trans  &trans
             >;
         };
 
@@ -74,9 +74,9 @@
 // | CRTL  | ALT   |  GUI     |   LOWER   |      GUI        | LOWER | SPACE   | --- | DEL  | SPACE |   RAISE   | LEFT | DOWN | UP  |   RIGHT    |
                         bindings = <
    &kp F1   &kp F2      &kp F3        &kp F4        &kp F5    &kp F6                                            &kp F7       &kp F8        &kp F9        &kp F10        &kp F11       &kp F12
-   &trans   &none       &none         &none         &none     &none   &bootloader                   &bt BT_CLR  &bt BT_SEL 0 &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3   &bt BT_SEL 4  &out OUT_TOG
-   &trans   &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_PP  &none   &sys_reset                    &trans      &kp F1       &kp F2        &kp F3        &kp F4         &kp F5        &kp F6
-   &trans   &kp PSCRN   &kp PSCRN     &kp CLCK      &none     &none   &trans      &trans   &trans   &trans      &kp F7       &kp F8        &kp F9        &kp F10        &kp F11       &kp F12
+   &trans   &none       &none         &none         &none     &none   &bootloader                   &kp PSCRN   &trans       &trans        &trans        &trans         &trans        &trans 
+   &trans   &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_PP  &none   &sys_reset                    &trans      &trans       &trans        &trans        &trans         &trans        &trans 
+   &trans   &trans      &trans        &trans        &none     &none   &trans      &trans   &trans   &trans      &trans       &trans        &trans        &trans         &trans        &trans 
    &trans   &trans      &trans        &trans        &trans            &trans      &trans   &trans   &trans                   &trans        &trans        &trans         &trans        &trans
             >;
         };
